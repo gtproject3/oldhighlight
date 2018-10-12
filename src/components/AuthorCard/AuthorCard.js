@@ -8,7 +8,7 @@ const AuthorCard = props => (
             <div className="uk-width-expand">
                 <div className="uk-card-badge uk-label">8 works</div>
                 <h3 className="uk-card-title uk-margin-remove-bottom">James Baldwin</h3>
-                <p className="uk-text-meta uk-margin-remove-top"><span className="flag-icon flag-icon-us"></span> New York City, New York, United States<br>Born: August 02, 1924<br>Died: December 01, 1987</p>
+                <p className="uk-text-meta uk-margin-remove-top"><span className="flag-icon flag-icon-us"></span> New York City, New York, United States<br></br>Born: August 02, 1924<br></br>Died: December 01, 1987</p>
             </div>
         </div>
         <div className="uk-card-body">

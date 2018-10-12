@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="galaxyBody" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Highlight</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Mono:300i" rel="stylesheet">
+    <link rel="stylesheet" href="css/flag-icon.min.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
+</head>
+<body>
+
+    <!-- nav -->
+    
+    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li><a href="index.html"><span uk-icon="bolt"></span>&nbsp;highlight</a></li>
+                <li><a href="authorForm.html"><span uk-icon="plus"></span>&nbsp;add author</a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li><button id="loginButton" class="uk-button uk-button-secondary">login</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- breadcrumbs -->
+    
+    <!-- <div class="uk-container">
+        <ul class="uk-breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><span>Add Author</span></li>
+        </ul>
+    </div> -->
+
+    <h1 class="uk-text-center">Add Author:</h1>
+    <!-- <p class="intro uk-width-1-2@m uk-width-expand@m uk-align-center">
+        say something here .. or not
+    </p> -->
+
+    <!-- form -->
+    <!-- <div class="uk-card-default uk-card-body"> -->
+        <form class="authorForm uk-width-1-2@m uk-align-center uk-form-stacked">
+            <fieldset class="uk-fieldset">
+
+                <div class="form-group">
+                    <!-- <h2 class="uk-legend">Author Info</h2> -->
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-stacked-select">* Full Name:</label>
+                        <div class="uk-inline uk-width-1-1">
+                            <span class="uk-form-icon uk-form-icon-flip whitishText" uk-icon="icon: pencil"></span>
+                            <input class="uk-input" id="authorName" name="authorName" type="text">
+                        </div>
+                    </div>
+                    
+                    <h6 class="uk-width-expand goldText" uk-leader="fill: ∆"> </h6>
+                    <p class="formTeeth uk-text-center blueText">DIVERSIFIERS</p>
+
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-stacked-select">* Race:</label>
+                        <select class="uk-select" id="gender" name="gender">
+                            <option>Select race...</option>
+                            <option>Asian</option>
+                            <option>Black</option>
+                            <option>Hispanic</option>
+                            <option>Multiracial</option>
+                            <option>Native American</option>
+                            <otion>Pacific Islander</otion>
+                            <option>White</option>
+                        </select>
+                    </div>
+                    <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">* Gender:</label>
+                        <select class="uk-select" id="gender" name="gender">
+                            <option>Select gender...</option>
+                            <option>Female</option>
+                            <option>Male</option>
+                            <option>Nonbinary</option>
+                        </select>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-stacked-select">* Sexual Orientation:</label>
+                        <select class="uk-select" id="sexualOrientation" name="sexualOrientation">
+                            <option>Select sexual orientation...</option>
+                            <option>Lesbian</option>
+                            <option>Gay</option>
+                            <option>Bisexual</option>
+                            <option>Transgender</option>
+                            <option>Queer</option>
+                            <option>Inersex</option>
+                            <option>Asexual</option>
+                            <option>Heterosexual</option>
+                        </select>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-stacked-select">Disability (Optional):</label>
+                        <select class="uk-select" id="disability" name="disability">
+                            <option>Select disability...</option>
+                            <option>None</option>
+                            <option>Acquired Brain Injury</option>
+                            <option>Autism Spectrum Disorder</option>
+                            <option>Deaf or Hard of Hearing</option>
+                            <option>Intellectual Disability</option>
+                            <option>Mental Health Conditions</option>
+                            <option>Physical Disability</option>
+                            <option>Vision Impairment</option>
+                        </select>
+                    </div>
+                
+                <h6 class="uk-width-expand goldText" uk-leader="fill: ∆"> </h6>
+                <p class="formTeeth uk-text-center blueText">BIO</p>
+            
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">* Date of Birth:</label>
+                    <div class="uk-inline uk-width-1-1">
+                        <span class="uk-form-icon uk-form-icon-flip whitishText" uk-icon="icon: calendar"></span>
+                        <input class="uk-input flatpickr flatpickr-input active" id="Born_at" name="Born_at" type="text">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">Date of Death (Optional):</label>
+                    <div class="uk-inline uk-width-1-1">
+                        <span class="uk-form-icon uk-form-icon-flip whitishText" uk-icon="icon: calendar"></span>
+                        <input class="uk-input flatpickr flatpickr-input active" id="Died_at" name="Died_at" type="text">
+                    </div>
+                </div>
+                
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">* Hometown:</label>
+                    <div class="uk-inline uk-width-1-1">
+                        <span class="uk-form-icon uk-form-icon-flip whitishText" uk-icon="icon: location"></span>
+                        <input class="uk-input" id="hometown" name="hometown" type="text">
+                    </div>
+                </div>
+
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">* Short Bio:</label>
+                    <div class="uk-inline uk-width-1-1">
+                        <span class="uk-form-icon uk-form-icon-flip whitishText" uk-icon="heart"></span>
+                        <textarea class="uk-textarea" rows="5" id="about" name="about"></textarea>
+                    </div>
+                </div>
+
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-stacked-select">* Number of Works:</label>
+                    <div class="uk-inline uk-width-1-1">
+                        <span class="uk-form-icon uk-form-icon-flip whitishText" uk-icon="hashtag"></span>
+                        <input class="uk-input" id="works_count" name="works_count" type="number">
+                    </div>
+                </div>
+                
+            <button class="uk-button uk-button-text uk-align-center redText" id="submit-btn"><span uk-icon="check"></span>&nbsp; Add Author</button>
+
+        </fieldset>
+    </form>
+<!-- </div> -->
+
+<!-- datepicker js -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+    $( '.flatpickr' ).flatpickr({
+        altInput: true,
+    altFormat: "F j, Y",
+    dateFormat: "Y-m-d",
+  });
+</script>
+
+</body>
+</html>

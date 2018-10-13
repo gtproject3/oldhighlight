@@ -13,11 +13,8 @@ module.exports = {
             .find(search)
             .then(dbModel => res.json(dbModel))
             .catch(err => res.status(422).json(err));
-
-
     }
 
-    // Model.$where('this.firstname === this.lastname').exec(callback)
 };
 
 // gender: xx

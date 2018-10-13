@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="blueBody" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Highlight</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Mono:300i" rel="stylesheet">
+    <link rel="stylesheet" href="css/flag-icon.min.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
+</head>
+<body>
+
+    <!-- navbar -->
+
+    <nav class="uk-navbar-container uk-navbar-transparent noBorder" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li><a href="index.html"><span uk-icon="bolt"></span>&nbsp;highlight</a></li>
+                <li><a href="authorForm.html"><span uk-icon="plus"></span>&nbsp;add author</a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li><button id="loginButton" class="uk-button uk-button-secondary">login</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- hero -->
+
+    <div class="uk-container">
+        <div class="uk-inline">
+            <img src="https://stmed.net/sites/default/files/galaxy-wallpapers-30826-3558648.jpg" alt="">
+            <div class="uk-overlay uk-position-center">
+                <h1 class="uk-text-center">highlight underrepresented authors</h1>
+                
+                <!-- featured authors slider -->
+
+                <div class="uk-position-relative uk-visible-toggle" uk-slider>
+
+                    <ul class="uk-slider-items uk-grid">
+                        <!-- james baldwin -->
+                        <li class="uk-width-4-5">
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-header">
+                                    <div class="uk-width-expand">
+                                        <div class="uk-card-badge uk-label">8 works</div>
+                                        <h3 class="uk-card-title uk-margin-remove-bottom">James Baldwin</h3>
+                                        <p class="uk-text-meta uk-margin-remove-top"><span class="flag-icon flag-icon-us"></span> New York City, New York, United States<br>Born: August 02, 1924<br>Died: December 01, 1987</p>
+                                    </div>
+                                </div>
+                                <div class="uk-card-body">
+                                    <p>James Arthur "Jimmy" Baldwin was an American novelist and social critic. His essays, as collected in Notes of a Native Son, explore intricacies of racial, sexual, and class distinctions in Western societies, most notably in mid-20th-century America.</p>
+                                </div>
+                                <div class="uk-card-footer">
+                                    <a class="uk-align-right" href="baldwin.html" class="uk-button uk-button-text">View Author<span uk-icon="arrow-right"></span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- ghalib shiraz dhalla -->
+                        <li class="uk-width-4-5">
+                            <div>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-header">
+                                        <div class="uk-width-expand">
+                                            <div class="uk-card-badge uk-label">2 works</div>
+                                            <h3 class="uk-card-title uk-margin-remove-bottom">Ghalib Shiraz Dhalla</h3>
+                                            <p class="uk-text-meta uk-margin-remove-top"><span class="flag-icon flag-icon-ke"></span> Mombasa, Kenya<br>Born: June 05, 1978</p>
+                                        </div>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <p>Ghalib Shiraz Dhalla is an American writer. He is most famous for his novel Ode to Lata published in 2002, that was adapted to a film in 2008 under the title The Ode. He has also published the novel The Two Krishnas in 2011, which was released as The Exiles in India.</p>
+                                    </div>
+                                    <div class="uk-card-footer">
+                                        <a class="uk-align-right" href="#" class="uk-button uk-button-text">View Author<span uk-icon="arrow-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- malinda lo -->
+                        <li class="uk-width-4-5">
+                            <div>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-header">
+                                        <div class="uk-width-expand">
+                                            <div class="uk-card-badge uk-label">12 works</div>
+                                            <h3 class="uk-card-title uk-margin-remove-bottom">Malinda Lo</h3>
+                                            <p class="uk-text-meta uk-margin-remove-top"><span class="flag-icon flag-icon-cn"></span> China<br>Born: 1974</p>
+                                        </div>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <p>Malinda Lo is an American writer of young adult novels including Ash, Huntress, Adaptation, and Inheritance. She also does research on diversity in young adult literature publishing.</p>
+                                    </div>
+                                    <div class="uk-card-footer">
+                                        <a class="uk-align-right" href="#" class="uk-button uk-button-text">View Author<span uk-icon="arrow-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- yukio mishima -->
+                        <li class="uk-width-4-5">
+                            <div>
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-header">
+                                        <div class="uk-width-expand">
+                                            <div class="uk-card-badge uk-label">13 works</div>
+                                            <h3 class="uk-card-title uk-margin-remove-bottom">Yukio Mishima</h3>
+                                            <p class="uk-text-meta uk-margin-remove-top"><span class="flag-icon flag-icon-jp"></span> Yotsuya, Tokyo, Japan<br>Born: January 14, 1925<br>Died: November 25, 1970</p>
+                                        </div>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <p>Yukio Mishima is the pen name of Kimitake Hiraoka, a Japanese author, poet, playwright, actor, model, film director, founder of the Tatenokai, and nationalist. Mishima is considered one of the most important Japanese authors of the 20th century.</p>
+                                    </div>
+                                    <div class="uk-card-footer">
+                                        <a class="uk-align-right" href="#" class="uk-button uk-button-text">View Author<span uk-icon="arrow-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                    
+                </div> <!-- closing slider -->
+
+                <p class="uk-text-center goldText">scroll to begin</p>
+                <p class="uk-text-center goldText"><span uk-icon="icon: arrow-down; ratio: 2.5"></span></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- search & filter -->
+
+    <div class="uk-container searchContainer">
+    <p class="uk-text-center"><span class="redText" uk-icon="bolt"></span></p>
+    <h3 class="searchContainerTitle uk-text-center">look up an author:</h3>
+    
+    <div class="uk-width-1-2@s uk-align-center">
+        <form class="uk-width-1-1 uk-form-stacked">
+            <fieldset class="uk-fieldset">
+                <div class="uk-margin">
+                <label class="uk-form-label" for="searchDiversity">Author Diversity</label>
+                    <select class="uk-select" id="selectRace">
+                        <option>Select author race...</option>
+                        <option>Asian</option>
+                        <option>Black</option>
+                        <option>Hispanic</option>
+                        <option>Multiracial</option>
+                        <option>Native American</option>
+                        <option>Pacific Islander</option>
+                        <option>White</option>
+                    </select>  
+                </div>
+
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="selectCategory">Literary Category</label>
+                    <select class="uk-select" id="selectCategory">
+                        <option>Select book category...</option>
+                        <option>Arts & Photography</option>
+                        <option>Biographies & Memoirs</option>
+                        <option>Children's Books</option>
+                        <option>History</option>
+                        <option>Literature & Fiction</option>
+                        <option>Mystery & Suspense</option>
+                        <option>Romance</option>
+                        <option>Sci-Fi & Fantasy</option>
+                        <option>Teens & Young Adult</option>
+                    </select>  
+                </div>
+                <button class="uk-button uk-button-primary uk-align-center">look up</button>
+            </fieldset>
+        </form>
+        
+    </div> <!-- closing search form -->
+
+</div> <!-- closing container -->
+        
+
+</body>
+</html>

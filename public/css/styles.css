@@ -1,0 +1,235 @@
+/* GLOBAL ****************************************************************************************/
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+.uk-breadcrumb {
+    margin-top: 20px;
+}
+.uk-breadcrumb li a {
+    color: #080533;
+}
+.uk-breadcrumb li a:hover {
+    color: #080533;
+    text-decoration: underline;
+}
+.galaxyBody {
+    background-color: #04031c;
+    background-image: url(https://stmed.net/sites/default/files/galaxy-wallpapers-30826-3558648.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.blueBody {
+    background-color: #04031c;
+}
+h1, h2, h3, h4, h5, h6, .uk-navbar-nav li a {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #DAC490;
+}
+.uk-navbar-nav li a {
+    font-size: 16px;
+}
+.uk-navbar-nav li a:hover {
+    color: #F9193E;
+}
+nav {
+    border-bottom: 1px dashed #DAC490;
+}
+.noBorder {
+    border: none;
+}
+#loginButton {
+    margin-right: 15px;
+    border: none;
+}
+.redHR {
+    border-top: 1px solid #F9193E;
+}
+.goldHR {
+    border-top: 1px solid #DAC490;
+}
+::selection {
+    background-color: #F9193E;
+    color: #EDFAE9;
+}
+#galaxyTop {
+    background-image: url(https://stmed.net/sites/default/files/galaxy-wallpapers-30826-3558648.jpg);
+    background-position: top;
+    border-color: #04031c;
+}
+#galaxyCenter {
+    background-image: url(https://stmed.net/sites/default/files/galaxy-wallpapers-30826-3558648.jpg);
+    background-position: center;
+}
+
+/* HOME: LOOKUP AUTHOR **************************************************************************************/
+.searchContainer {
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+.searchContainer .uk-select, .searchContainer .uk-input {
+    background-color: rgba(218, 196, 144, 0.15);
+    color: #f3ecdc;
+    border-color: #0c074a;
+}
+.searchContainerTitle {
+    margin-top: 20px;
+}
+.uk-form-label {
+    color: #DAC490;
+    font-size: 16px;
+}
+.uk-select, .uk-input, .uk-button-default, .uk-textarea {
+    /* margin-bottom: 10px; */
+    border-radius: 5px;
+    color: #080533;
+    background-color: #f3ecdc;
+}
+#buttonDropdown {
+    font-family: 'Roboto Mono', monospace;
+    text-transform: none;
+}
+
+/* BUTTONS *******************************************************************************************/
+.uk-button {
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+.uk-button-primary {
+    background-color: rgba(249, 25, 62, 0.25);
+    border: 2px solid #F9193E;
+    color: #DAC490;
+}
+.uk-button-primary:hover {
+    background-color: #F9193E;
+    color: #080533;
+}
+.uk-button-primary:focus {
+    background-color: #c00524;
+    color: #080533;
+}
+.uk-button-secondary {
+    border: 2px solid #DAC490;
+    color: #DAC490;
+    background-color: rgba(218, 196, 144, 0.25);
+}
+.uk-button-secondary:hover {
+    background-color: #DAC490;
+    color: #080533;
+}
+.uk-button-secondary:focus {
+    background-color: #c7a657;
+    color: #080533;
+}
+
+/* AUTHOR CARDS *************************************************************************************/
+.authorGrid {
+    background: linear-gradient(#04031c, #DAC490);
+}
+.uk-card-default {
+    background-color: #f3ecdc;
+    box-shadow: 0 5px 30px rgba(117, 3, 22,0.80);
+}
+.uk-card-default .uk-card-header, .uk-card-default .uk-card-footer {
+    border-color: #DAC490;
+}
+.uk-card-title, .uk-card-body, .uk-card-footer a, .uk-card-header p {
+    color: #080533 !important;
+}
+.uk-card-footer a {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+.uk-text-meta {
+    color: #717A7C;
+}
+.uk-card-header {
+    padding-bottom: 0px;
+}
+.uk-card-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.uk-card-badge {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: transparent;
+    border: 1.5px solid #DAC490;
+    color: #080533;
+}
+
+/* AUTHOR DETAIL PAGE *************************************************************************************/
+.uk-badge {
+    color: #080533;
+    background-color: #DAC490;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+article {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.redText {
+    color: #F9193E;
+}
+.blueText {
+    color: #080533;
+}
+.goldText {
+    color: #DAC490;
+}
+.whitishText {
+    color: #0c074a;
+}
+.blockQuote {
+    /* padding: 20px; */
+    color: #c7a657;
+}
+.uk-comment {
+    background-color: rgba(243, 236, 220, 0.5);
+}
+.uk-comment-title {
+    color: #080533;
+}
+.uk-comment-meta {
+    color: #F9193E;
+}
+.uk-slidenav {
+    color: #F9193E;
+}
+.uk-dotnav>.uk-active>* {
+    background-color: #F9193E;
+}
+.uk-dotnav>*>* {
+    border-color: #F9193E;
+}
+
+/* ADD AUTHOR FORM **************************************************************************************/
+.authorForm {
+    background-color: #f3ecdc;
+    padding: 40px;
+    margin-bottom: 100px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.80);
+}
+.authorForm .uk-form-label {
+    font-size: 18px;
+    color: #080533;
+}
+.authorForm .uk-input, .authorForm .uk-select, .authorForm .uk-textarea {
+    background-color: #ece2c9;
+    border-color: #0c074a;
+    color: #080533;
+}
+.formTeeth {
+    margin-top: 40px;
+}
+
+/* DATE PICKER ***************************************************************************************/
+.flatpickr-day.selected, .flatpickr-day.startRange, .flatpickr-day.endRange, .flatpickr-day.selected.inRange, .flatpickr-day.startRange.inRange, .flatpickr-day.endRange.inRange, .flatpickr-day.selected:focus, .flatpickr-day.startRange:focus, .flatpickr-day.endRange:focus, .flatpickr-day.selected:hover, .flatpickr-day.startRange:hover, .flatpickr-day.endRange:hover, .flatpickr-day.selected.prevMonthDay, .flatpickr-day.startRange.prevMonthDay, .flatpickr-day.endRange.prevMonthDay, .flatpickr-day.selected.nextMonthDay, .flatpickr-day.startRange.nextMonthDay, .flatpickr-day.endRange.nextMonthDay {
+    background: #DAC490 !important;
+    border-color: #DAC490 !important;
+    color: #080533 !important;
+}

@@ -1,21 +1,24 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import AuthorCard from "./components/AuthorCard";
+import AuthorDetailNav from "./components/AuthorDetailNav";
+/*import AuthorForm from "./components/AuthorForm";*/
+import HomeNav from "./components/HomeNav";
+import SearchPanel from "./components/SearchPanel";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div className="container-fluid mainPage">
+  <AuthorDetailNav/>
+  <AuthorCard/>
+  <HomeNav/>
+  {/*<AuthorForm/>*/}
+  <SearchPanel/>
+
+    {/* you need to break down each part of the page into a component */ }
+    { /* from there, we'll link them as: <Sidebar/> , <NavBar/> etc.*/ }
+    { /* ask TA if this is the best way to do it. */} 
+  </div>
+);
 
 export default App;
+
+

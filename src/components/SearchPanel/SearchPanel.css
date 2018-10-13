@@ -1,0 +1,12 @@
+.searchContainer {
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+.searchContainer .uk-select, .searchContainer .uk-input {
+    background-color: rgba(218, 196, 144, 0.15);
+    color: #f3ecdc;
+    border-color: #0c074a;
+}
+.searchContainerTitle {
+    margin-top: 20px;
+}

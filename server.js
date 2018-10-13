@@ -1,18 +1,27 @@
-require("dotenv").config();
-var express = require("express");
+const express = require("express");
+const mongoose = require("mongoose");
+
+//for Passport
 const cookieSession = require("cookie-session");
 const passport = require("passport");
-var bodyParser = require("body-parser");
+const bodyParser = require("body-parser");
 const keys = require("./config/keys");
-
-
-var db = require("./models");
+const routes = require("./routes");
 require("./services/passport.js")(passport, db.User);
 
 
+const app = express();
+const PORT = process.env.PORT || 3001;
 
-var app = express();
-var PORT = process.env.PORT || 3000;
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+}
+
+app.use(routes);
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -32,31 +41,12 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
-// Routes
-require("./routes/authRoutes")(app);
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+
+mongoose.connect(
+    process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist"
+);
 
 
-
-var syncOptions = { force: false };
-
-// If running a test, set syncOptions.force to true
-// clearing the `testdb`
-if (process.env.NODE_ENV === "test") {
-  syncOptions.force = true;
-}
-
-
-// Starting the server, syncing our models ------------------------------------/
-db.sequelize.sync(syncOptions).then(function() {
-  videoApp.listen(PORT, function() {
-    console.log(
-      "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
-      PORT,
-      PORT
-    );
-  });
+app.listen(PORT, function () {
+    console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
-
-module.exports = app;
